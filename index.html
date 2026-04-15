@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Cobo | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Cobos | Lic. Comercio Internacional</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <h1>Eduardo Cobo</h1>
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
+<header class="navbar">
+  <div class="logo">Eduardo Cobos</div>
+  <nav>
+    <a href="#about">Perfil</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contacto</a>
   </nav>
+</header>
 
-  <section class="hero">
-    <h2>QA Engineer & Frontend Developer</h2>
-    <p>Automation, Testing & Quality Engineering</p>
-    <button onclick="downloadCV()">Download CV</button>
-  </section>
+<section class="hero">
+  <h1 class="fade-in">Lic. en Comercio Internacional</h1>
+  <p class="fade-in delay">Dirección de operaciones · Cadena de suministro · Negocios internacionales</p>
+  <button onclick="scrollToSection('contact')" class="btn fade-in delay-2">Contáctame</button>
+</section>
 
-  <section id="about" class="section">
-    <h3>About Me</h3>
-    <p>QA Engineer especializado en pruebas manuales y automatizadas, enfocado en calidad y mejora continua.</p>
-  </section>
+<section id="about" class="section reveal">
+  <h2>Perfil Profesional</h2>
+  <p>
+    Profesional en el área de comercio y administración empresarial, con experiencia en gestión operativa, procesos de concursos y licitaciones 
+    para proveeduría de servicios, cadena de suministro, negociación con clientes y proveedores, compras, ventas y documentación 
+    administrativa en general (IMSS, SAT, INFONAVIT, REPSE).
+    Enfocado en eficiencia, optimización de procesos y crecimiento sostenible.
+  </p>
+</section>
 
-  <section id="projects" class="section">
-    <h3>Projects</h3>
-    <div class="grid">
-      <div class="card">Project 1</div>
-      <div class="card">Project 2</div>
-      <div class="card">Project 3</div>
+<section id="experience" class="section reveal">
+  <h2>Experiencia</h2>
+  <div class="timeline">
+    <div class="item">
+      <h3>Gestión de Operaciones</h3>
+      <p>Optimización de procesos, control de costos y mejora continua.</p>
     </div>
-  </section>
+    <div class="item">
+      <h3>Cadena de Suministro</h3>
+      <p>Logística, proveedores, inventarios y distribución eficiente.</p>
+    </div>
+    <div class="item">
+      <h3>Relación con Clientes</h3>
+      <p>Atención estratégica, negociación y fidelización.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="section">
-    <h3>Contact</h3>
-    <button onclick="sendEmail()">Send Email</button>
-  </section>
+<section id="skills" class="section reveal">
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <div class="skill">
+      <span>Gestión Operativa</span>
+      <div class="bar"><div style="width:90%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Negociación</span>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Cadena de Suministro</span>
+      <div class="bar"><div style="width:88%"></div></div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Eduardo Cobo
-  </footer>
+<section id="contact" class="section reveal center">
+  <h2>Contacto</h2>
+  <p>Disponible para oportunidades profesionales</p>
+  <button class="btn" onclick="sendEmail()">Enviar Email</button>
+</section>
+
+<footer>
+  © 2026 Eduardo Cobos · Licenciado en Comercio Internacional
+</footer>
 
 <script src="script.js"></script>
 </body>
+</html>
 </html>
