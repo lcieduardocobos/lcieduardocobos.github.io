@@ -1,4 +1,68 @@
 :root {
+  --bg: #020617;
+  --card: #0f172a;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22c55e;
+}
+
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background: rgba(2,6,23,0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1f2937;
+}
+
+.navbar a {
+  margin-left: 25px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+/* Botón */
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 /* Sections */
 .section {
   padding: 100px 60px;
