@@ -1,5 +1,5 @@
 function sendEmail() {
-  window.location.href = "mailto:tuemail@email.com";
+  window.location.href = "eduardocobosv@gmail.com";
 }
 
 function scrollToSection(id) {
