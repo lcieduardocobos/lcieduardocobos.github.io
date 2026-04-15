@@ -1,4 +1,50 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Cobos | Lic. Comercio Internacional</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Eduardo Cobos</div>
+  <nav>
+    <a href="#about">Perfil</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Lic. en Comercio Internacional</h1>
+    <p>
+      Especialista en optimización de operaciones, cadena de suministro
+      procesos de licitaciones y expansión de negocios.
+    </p>
+    <button class="btn" onclick="scrollToSection('contact')">Contáctame</button>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>Sobre Mí</h2>
+    <p>
+      Profesional con experiencia en dirección de operaciones, negociación estratégica,
+      gestión de proveedores y optimización de procesos. Enfocado en resultados medibles
+      y crecimiento sostenible.
+    </p>
+  </div>
+</section>
+
+<section id="experience" class="section">
   <div class="container">
     <h2>Experiencia</h2>
 
@@ -27,30 +73,3 @@
         <span>Gestión Operativa</span>
         <div class="bar"><div style="width:90%"></div></div>
       </div>
-
-      <div class="skill">
-        <span>Negociación</span>
-        <div class="bar"><div style="width:85%"></div></div>
-      </div>
-
-      <div class="skill">
-        <span>Supply Chain</span>
-        <div class="bar"><div style="width:88%"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section center">
-  <h2>Contacto</h2>
-  <p>Disponible para oportunidades profesionales</p>
-  <button class="btn" onclick="sendEmail()">Enviar Email</button>
-</section>
-
-<footer>
-  © 2026 Eduardo Cobos
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
