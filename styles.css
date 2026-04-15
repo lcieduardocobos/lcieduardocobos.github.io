@@ -1,61 +1,57 @@
 :root {
-.navbar a:hover { color: var(--accent); }
-
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 { font-size: 2.5rem; }
-.hero p { color: #9ca3af; }
-
-.btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: var(--accent);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
+/* Sections */
 .section {
-  padding: 80px 40px;
+  padding: 100px 60px;
   border-top: 1px solid #1f2937;
 }
 
-.timeline .item {
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
   margin-bottom: 20px;
 }
 
-.skills .bar {
+/* Timeline */
+.timeline .item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 12px;
+}
+
+.timeline span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
   background: #1f2937;
   height: 8px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.skills .bar div {
+.bar div {
   height: 100%;
-  background: var(--accent);
-  border-radius: 10px;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   border-top: 1px solid #1f2937;
-  color: #6b7280;
+  color: var(--muted);
 }
 
-/* Animaciones */
-.fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
-.delay { animation-delay: 0.5s; }
-.delay-2 { animation-delay: 1s; }
-
-@keyframes fadeIn {
-  to { opacity: 1; transform: translateY(0); }
+.center {
+  text-align: center;
 }
-
-.reveal { opacity: 0; transform: translateY(40px); transition: 0.8s; }
-.reveal.active { opacity: 1; transform: translateY(0); }
-
-.center { text-align: center; }
