@@ -6,7 +6,6 @@
   --accent: #22c55e;
 }
 
-/* Base */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -14,108 +13,46 @@ body {
   color: var(--text);
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
-  position: sticky;
-  top: 0;
-  background: rgba(2,6,23,0.8);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #1f2937;
 }
 
-.navbar a {
-  margin-left: 25px;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.navbar a:hover {
+.lang-btn {
+  background: none;
+  border: 1px solid var(--accent);
   color: var(--accent);
-}
-
-/* Hero */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero p {
-  color: var(--muted);
-}
-
-/* Botón */
-.btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #22c55e, #4ade80);
-  border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-/* Sections */
-.section {
-  padding: 100px 60px;
-  border-top: 1px solid #1f2937;
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* Timeline */
-.timeline .item {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: var(--card);
+.hero-photo img {
+  width: 100%;
   border-radius: 12px;
 }
 
-.timeline span {
-  color: var(--muted);
-  font-size: 0.9rem;
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* Skills */
-.skill {
-  margin-bottom: 20px;
+.case-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 15px;
 }
 
-.bar {
-  background: #1f2937;
-  height: 8px;
+.case-card img {
+  width: 100%;
   border-radius: 10px;
-  overflow: hidden;
-}
-
-.bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 30px;
-  border-top: 1px solid #1f2937;
-  color: var(--muted);
-}
-
-.center {
-  text-align: center;
+  margin-bottom: 10px;
 }
