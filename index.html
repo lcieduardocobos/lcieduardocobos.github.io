@@ -1,0 +1,116 @@
+// ======================================
+// 🚀 PORTAFOLIO ROBUSTO Y RESPONSIVE
+// Versión estable, optimizada y difícil de romper
+// ======================================
+
+// =============================
+// FILE: index.html
+// =============================
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Cobo | Comercio Internacional</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Eduardo Cobo</div>
+  <nav class="nav-links">
+    <a href="#about">Perfil</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#cases">Casos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>Lic. en Comercio Internacional</h1>
+      <p>
+        Especialista en operaciones, logística y crecimiento de negocios mediante
+        optimización de procesos y reducción de costos.
+      </p>
+
+      <ul class="highlights">
+        <li>✔ Reducción de costos</li>
+        <li>✔ Gestión de proveedores</li>
+        <li>✔ Optimización logística</li>
+      </ul>
+
+      <button class="btn" onclick="scrollToSection('contact')">Contáctame</button>
+    </div>
+
+    <div class="hero-photo">
+      <img src="foto.jpg" alt="Foto profesional" />
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>Perfil Profesional</h2>
+    <p>
+      Profesional con experiencia en dirección de operaciones, cadena de suministro
+      y administración de negocios. Enfocado en eficiencia, control de costos y resultados.
+    </p>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="container">
+    <h2>Experiencia</h2>
+
+    <div class="timeline">
+      <div class="item">
+        <h3>Director de Operaciones</h3>
+        <span>2022 - Actualidad</span>
+        <p>Optimización de procesos, reducción de costos y gestión de proveedores.</p>
+      </div>
+
+      <div class="item">
+        <h3>Gerente Supply Chain</h3>
+        <span>2020 - 2022</span>
+        <p>Coordinación logística, control de inventarios y mejora de tiempos de entrega.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases" class="section">
+  <div class="container">
+    <h2>Casos de Éxito</h2>
+
+    <div class="cases-grid">
+      <div class="case-card">
+        <img src="caso1.jpg" alt="Caso 1">
+        <h3>Optimización Logística</h3>
+        <p>Reducción de costos y mejora operativa.</p>
+      </div>
+
+      <div class="case-card">
+        <img src="caso2.jpg" alt="Caso 2">
+        <h3>Gestión de Proveedores</h3>
+        <p>Mejora en negociación y tiempos de entrega.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section center">
+  <h2>Contacto</h2>
+  <button class="btn" onclick="sendEmail()">Enviar Email</button>
+</section>
+
+<footer>
+  © 2026 Eduardo Cobo
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
