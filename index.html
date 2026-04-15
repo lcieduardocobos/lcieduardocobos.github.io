@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Cobos | Lic. Comercio Internacional</title>
+  <title>Eduardo Cobos | (LCI) Lic. Comercio Internacional</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,59 +15,80 @@
   <nav>
     <a href="#about">Perfil</a>
     <a href="#experience">Experiencia</a>
-    <a href="#skills">Habilidades</a>
+    <a href="#cases">Casos</a>
     <a href="#contact">Contacto</a>
   </nav>
+  <button class="lang-btn" onclick="toggleLang()">EN</button>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Lic. en Comercio Internacional</h1>
-    <p>
-      Especialista en optimización de operaciones, cadena de suministro
-      procesos de licitaciones y expansión de negocios.
-    </p>
-    <button class="btn" onclick="scrollToSection('contact')">Contáctame</button>
+  <div class="hero-grid">
+
+    <div class="hero-text">
+      <h1 data-es="Lic. en Comercio Internacional" data-en="Bachelor in International Business"></h1>
+      <p data-es="Especialista en operaciones, supply chain y crecimiento empresarial." data-en="Specialist in operations, supply chain, and business growth."></p>
+
+      <ul class="highlights">
+        <li data-es="✔ Reducción de costos" data-en="✔ Cost reduction"></li>
+        <li data-es="✔ Gestión logística" data-en="✔ Logistics management"></li>
+        <li data-es="✔ Optimización de procesos" data-en="✔ Process optimization"></li>
+      </ul>
+
+      <button class="btn" onclick="scrollToSection('contact')">Contact</button>
+    </div>
+
+    <div class="hero-photo">
+      <img src="foto.jpg" alt="Foto profesional" />
+    </div>
+
   </div>
 </section>
 
 <section id="about" class="section">
   <div class="container">
-    <h2>Sobre Mí</h2>
-    <p>
-      Profesional con experiencia en dirección de operaciones, negociación estratégica,
-      gestión de proveedores y optimización de procesos. Enfocado en resultados medibles
-      y crecimiento sostenible.
-    </p>
+    <h2 data-es="Perfil Profesional" data-en="Professional Profile"></h2>
+    <p data-es="Profesional con experiencia en operaciones, negociación y supply chain." data-en="Professional with experience in operations, negotiation, and supply chain."></p>
   </div>
 </section>
 
 <section id="experience" class="section">
   <div class="container">
-    <h2>Experiencia</h2>
+    <h2 data-es="Experiencia" data-en="Experience"></h2>
 
     <div class="timeline">
       <div class="item">
         <h3>Director de Operaciones</h3>
-        <span>Empresa XYZ · 2022 - Presente</span>
-        <p>Optimización de procesos y reducción de costos operativos.</p>
-      </div>
-
-      <div class="item">
-        <h3>Gerente de Supply Chain</h3>
-        <span>Empresa XYZ · 2020 - 2022</span>
-        <p>Gestión de proveedores, logística e inventarios.</p>
+        <p>• Reducción de costos • Mejora de procesos</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="section">
+<!-- CASOS DE ÉXITO -->
+<section id="cases" class="section">
   <div class="container">
-    <h2>Habilidades</h2>
+    <h2 data-es="Casos de Éxito" data-en="Case Studies"></h2>
 
-    <div class="skills">
-      <div class="skill">
-        <span>Gestión Operativa</span>
-        <div class="bar"><div style="width:90%"></div></div>
+    <div class="cases-grid">
+
+      <div class="case-card">
+        <img src="caso1.jpg" alt="Caso 1">
+        <h3>Optimización Logística</h3>
+        <p>Reducción de costos en cadena de suministro mediante mejora de procesos.</p>
       </div>
+
+      <div class="case-card">
+        <img src="caso2.jpg" alt="Caso 2">
+        <h3>Gestión de Proveedores</h3>
+        <p>Negociación estratégica que mejoró tiempos y costos.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section center">
+  <h2>Contacto</h2>
+  <button class="btn" onclick="sendEmail()">Email</button>
+</section>
+</html>
