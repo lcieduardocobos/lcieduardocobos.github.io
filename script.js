@@ -12,14 +12,13 @@ function toggleLang() {
 }
 
 function sendEmail() {
-  window.location.href = "mailto:tuemail@email.com";
+  window.location.href = "mailto:eduardocobosv@gmail.com";
 }
 
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
 
-/* 👇 ESTO ES LO QUE TE FALTA */
 document.addEventListener("DOMContentLoaded", () => {
   applyLanguage('es');
 });
