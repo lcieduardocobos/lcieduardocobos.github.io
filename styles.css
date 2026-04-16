@@ -5,6 +5,9 @@
   --muted: #9ca3af;
   --accent: #22c55e;
 }
+* {
+  transition: all 0.2s ease-in-out;
+}
 
 * { box-sizing: border-box; }
 
@@ -13,6 +16,12 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
+}
+
+a, button {
+  border-radius: 8px;
+  padding: 10px 18px;
+  text-decoration: none;
 }
 
 img { max-width: 100%; display: block; }
@@ -72,6 +81,8 @@ a:hover { color: var(--accent); }
 
 .section {
   padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .container {
@@ -122,4 +133,69 @@ footer {
   .section {
     padding: 80px 60px;
   }
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exp-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cases-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.case-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.case-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
 }
