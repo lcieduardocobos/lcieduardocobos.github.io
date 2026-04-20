@@ -129,6 +129,20 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .case-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 por fila */
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.case-media img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
   .navbar {
     padding: 20px 60px;
   }
@@ -229,4 +243,38 @@ footer {
   color: #fff;
   font-size: 40px;
   cursor: pointer;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+p {
+  white-space: pre-line;
+  line-height: 1.6;
 }
