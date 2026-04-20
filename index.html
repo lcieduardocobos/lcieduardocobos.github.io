@@ -156,6 +156,16 @@
       <img src="assets/certificados/eleadership.jpg" alt="E-Leadership">
       <p>E-Leadership</p>
     </div>
+    
+    <div class="skill-card">
+  <img src="assets/certificados/contratos.jpg" alt="Contratos Internacionales">
+  <p>Contratos Internacionales</p>
+</div>
+
+<div class="skill-card">
+  <img src="assets/certificados/mindmap.jpg" alt="Mind Mapping">
+  <p>Mind Mapping</p>
+</div>
 
   </div>
 </section>
@@ -173,5 +183,32 @@
 </footer>
 
 <script src="script.js"></script>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+</div>
+
+<script>
+  const images = document.querySelectorAll('.skill-card img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.onclick = () => {
+    lightbox.style.display = 'none';
+  };
+
+  lightbox.onclick = () => {
+    lightbox.style.display = 'none';
+  };
+</script>
 </body>
 </html>
