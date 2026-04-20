@@ -119,14 +119,9 @@ footer {
 
 .center { text-align: center; }
 
-/* RESPONSIVE */
 @media (min-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr 300px;
-  }
-
-  .cases-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .case-media {
@@ -188,11 +183,11 @@ footer {
 }
 
 .cases-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
+
 
 .case-card {
   display: flex;
@@ -282,7 +277,7 @@ footer {
 
 p {
   white-space: pre-line;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 p::before {
