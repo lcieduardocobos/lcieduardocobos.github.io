@@ -65,6 +65,43 @@ a:hover { color: var(--accent); }
   border-radius: 16px;
 }
 
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.hero-block p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.hero-value {
+  margin-top: 25px;
+}
+
+.hero-value h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.hero-value ul {
+  padding-left: 20px;
+}
+
+.hero-value li {
+  margin-bottom: 6px;
+}
+
+.hero-closing {
+  margin-top: 20px;
+}
+
+.hero-closing p {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
 .highlights {
   padding-left: 20px;
 }
