@@ -313,6 +313,35 @@ footer {
   transform: translateY(0);
 }
 
+.clientes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cliente-card {
+  width: 200px; /* EXACTAMENTE igual que .skill-card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cliente-card img {
+  width: 100%;
+  height: 120px; /* mismo alto visual que certificados */
+  object-fit: contain;
+  background: #fff; /* opcional: mejora logos transparentes */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.cliente-card img:hover {
+  transform: scale(1.05);
+}
+
 p {
   white-space: pre-line;
   line-height: 1.7;
