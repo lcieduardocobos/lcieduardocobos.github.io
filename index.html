@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Cobos (Portafolio profesional)</title>
+  <title data-i18n="page_title">Eduardo Cobos (Portafolio profesional)</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
@@ -23,69 +23,118 @@
   </nav>
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
   <div class="container">
+    <div class="hero-grid">
+      
+    <div class="hero-text">
+      <h1 data-i18n="title">Lic. en Comercio Internacional</h1>
 
-    <h1 data-i18n="title">Lic. en Comercio Internacional</h1>
-    <p class="hero-subtitle" data-i18n="subtitle"></p>
+      <p class="hero-subtitle" data-i18n="subtitle">
+      Especializado en Operaciones y Administración de Negocios
+      </p>
+      
+      <div class="hero-block">
+       <p data-i18n="hero_p1"></p>
+       <p data-i18n="hero_p2"></p>
+       <p data-i18n="hero_p3"></p>
+      </div>
+      
+      <div class="hero-value">
+      <h3 data-i18n="value_title">Propuesta de valor</h3>
 
-    <p data-i18n="hero_p1"></p>
-    <p data-i18n="hero_p2"></p>
-    <p data-i18n="hero_p3"></p>
+      <ul>
+        <li data-i18n="value_1"></li>
+        <li data-i18n="value_2"></li>
+        <li data-i18n="value_3"></li>
+        <li data-i18n="value_4"></li>
+        <li data-i18n="value_5"></li>
+      </ul>
+      </div>
 
-    <h3 data-i18n="value_title"></h3>
-    <ul>
-      <li data-i18n="value_1"></li>
-      <li data-i18n="value_2"></li>
-      <li data-i18n="value_3"></li>
-      <li data-i18n="value_4"></li>
-      <li data-i18n="value_5"></li>
-    </ul>
+      <div class="hero-closing">
+        <p data-i18n="closing_1"></p>
+        <p data-i18n="closing_2"></p>
+      </div>
 
-    <p data-i18n="closing_1"></p>
-    <p data-i18n="closing_2"></p>
-
-    <button class="btn" data-i18n="contact_btn" onclick="scrollToSection('contact')"></button>
-
+      <button class="btn" onclick="scrollToSection('contact')" data-i18n="contact_btn"></button>
+      
+    </div>
+    
+    <div class="hero-photo">
+      <img src="foto_profesional_comprimida.jpg" alt="Foto profesional" />
+    </div>
   </div>
+</div>
 </section>
 
 <section id="about" class="section">
-  <h2 data-i18n="recent_exp"></h2>
-  <p data-i18n="recent_exp_text"></p>
+  <div class="container">
+    <h2 data-i18n="recent_exp"></h2>
+    <p data-i18n="recent_exp_text"></p>
+  </div>
 </section>
 
 <section id="experience" class="section">
-  <h2 data-i18n="jobs"></h2>
+  <div class="container">
+    <h2 data-i18n="jobs"></h2>
 
-  <h3 data-i18n="job1_title"></h3>
-  <span data-i18n="job1_date"></span>
-  <p data-i18n="job1_desc"></p>
+    <div class="timeline">
+      <div class="item">
+        <div class="experience-item">
+          <div class="exp-header">
+            <img src="assets/logos/kumo.png" alt="Kumo Servicios" class="exp-logo">
+            <h3 data-i18n="job1_title"></h3>
+            <span data-i18n="job1_date"></span>
+            <p data-i18n="job1_desc"></p>
+          </div>
 
-  <h3 data-i18n="job2_title"></h3>
-  <span data-i18n="job2_date"></span>
-  <p data-i18n="job2_desc"></p>
+      <div class="item">
+        <div class="experience-item">
+          <div class="exp-header">
+            <img src="assets/logos/ip.png" alt="Integration Point" class="exp-logo">
+            <h3 data-i18n="job2_title"></h3>
+            <span data-i18n="job2_date"></span>
+            <p data-i18n="job2_desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="cases" class="section">
-  <h2 data-i18n="cases_title"></h2>
+  <div class="container">
+    <h2 data-i18n="cases_title"></h2>
 
-  <h3 data-i18n="case1_title"></h3>
-  <p data-i18n="case1_desc"></p>
+<div class="cases-container">
+      
+ <div class="case-card">
+   <h3 data-i18n="case1_title"></h3>
+   <p data-i18n="case1_desc"></p>
+ </div>
 
-  <h3 data-i18n="case2_title"></h3>
-  <p data-i18n="case2_desc"></p>
+ <div class="case-card">
+   <h3 data-i18n="case2_title"></h3>
+   <p data-i18n="case2_desc"></p>
+ </div>
 
-  <h3 data-i18n="case3_title"></h3>
-  <p data-i18n="case3_desc"></p>
+ <div class="case-card">
+   <h3 data-i18n="case3_title"></h3>
+   <p data-i18n="case3_desc"></p>
+ </div>
 
-  <h3 data-i18n="case4_title"></h3>
-  <p data-i18n="case4_desc"></p>
+ <div class="case-card">
+   <h3 data-i18n="case4_title"></h3>
+   <p data-i18n="case4_desc"></p>
+ </div>
+
+</div>
 </section>
 
 <section id="contact" class="section center">
   <h2 data-i18n="contact"></h2>
-  <p>Teléfono/Whatsapp: +52 (871) 761-6249</p>
+  <p>Teléfono/Whatsapp: +52 (871) 761-6249 </p>
   <button class="btn" onclick="sendEmail()" data-i18n="send_email"></button>
 </section>
 
