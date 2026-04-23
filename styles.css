@@ -351,12 +351,3 @@ p {
   line-height: 1.7;
 }
 
-.lang-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  border: 1px solid var(--muted);
-  color: var(--text);
-  cursor: pointer;
-}
